@@ -1,0 +1,40 @@
+@php
+$configData = Helper::appClasses();
+@endphp
+
+@extends('layouts/layoutMaster')
+
+@section('title', 'Creando usuario')
+
+@section('content')
+<div class="row">
+    <div-col-lg-12>
+    <div class="card mb-4">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">Creando un usuario nuevo</h5>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="{{route ('pages-users-update')}}">
+            @csrf
+          <input type="hidden" name="user_id" value="{{$user->id}}">
+          <div class="mb-3">
+            <label class="form-label" for="basic-default-fullname">Nombre completo</label>
+            <input type="text" name="name" value="{{$user->name}}" class="form-control" id="basic-default-fullname" placeholder="John Doe" />
+            <!-- el name del input es lo que va a mandar mediante el post, al laravel para leer la request de la variable -->
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="basic-default-company">Email</label>
+            <input type="text" name="email" value="{{$user->email}}" class="form-control" id="basic-default-email" placeholder="example@example.com" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="basic-default-company">Password Nuevo</label>
+            <input type="password" name="new_password" class="form-control" id="basic-default-password" placeholder="Secret password" />
+          </div>
+        
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+    </div-col-lg-12>
+</div>
+@endsection

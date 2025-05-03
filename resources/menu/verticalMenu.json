@@ -4,13 +4,48 @@
       "url": "/",
       "name": "Home",
       "icon": "menu-icon tf-icons bx bx-home-circle",
-      "slug": "pages-home"
-    },
+       "slug": "pages-home" 
+    },  
     {
-      "url": "/page-2",
-      "icon": "menu-icon tf-icons bx bx-file",
-      "name": "Page 2",
-      "slug": "pages-page-2"
+      "url": "/devices",
+      "name": "Equipos",
+      "icon": "menu-icon tf-icons bx bx-home",
+      "slug": "pages-devices"
+    },
+
+    {
+      "url": "/sos",
+      "name": "Sistema operativos",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "pages-sos"
+    },
+
+    {
+      "url": "/types",
+      "name": "Tipos",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "pages-types"
+    },
+
+    {
+      "url": "/reports",
+      "name": "Reportes",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "pages-reports"
+    },
+
+    {
+      "url": "/backups",
+      "name": "Backups",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "pages-backups"
+    },
+
+    {
+      "url": "/users",
+      "name": "Usuarios",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "pages-users"
     }
   ]
 }
